@@ -102,7 +102,7 @@ section > div{
 }
 @font-face {
     font-family: handWrittenFont;
-    src: url(/Assets/Fonts/handWritten.otf);
+    src: url(AssetshandWritten.otf);
 }
 section > .one{
     font-family: handWrittenFont;
