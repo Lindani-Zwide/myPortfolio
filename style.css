@@ -76,7 +76,7 @@ main{
 }
 section{
     width: 100%;
-    min-height:35.1875rem;
+    height:100vh;
     display: grid;
     gap: 0.5rem;
     grid-template-rows: repeat(auto-fit,4.1875rem) ;
@@ -116,7 +116,7 @@ section > .one{
 }
 section .two{
     background-color: #D1D5DB;
-    grid-area: 2/1/4/4;
+    grid-area: 2/1/4/6;
     display: grid;
     place-items: center;
 }
@@ -124,7 +124,7 @@ section .two{
     border-radius: 1rem;
 }
 section .three{
-    grid-area: 4/1/4/4;
+    grid-area: 4/1/4/6;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -195,7 +195,7 @@ section .three{
     }
 }
 .home .four{
-    grid-area:5/1/8/5;
+    grid-area:5/1/7/6;
     border-top: 1px solid #075985;
     border-bottom: 1px solid #075985;
 }
@@ -205,20 +205,19 @@ section .three{
     padding: 0.3rem;
 }
 .connect{
-    padding:3px;
-    border-bottom:1px solid #075985;
-    grid-column: 1/4;
+    grid-column: 1/6;
+    padding: 1rem;
 }
 .connect ul{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    column-gap: 3px;
+    column-gap: 5px;
 }
 .connect ul li a{
-    border-radius: 50%;
+    border-radius: 10px;
     background-color: #D1D5DB;
 }
 .connect ul li img{
-    border-radius: 50%;
+    border-radius: 5px;
 }
