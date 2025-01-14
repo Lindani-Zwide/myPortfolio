@@ -221,3 +221,6 @@ section .three{
 .connect ul li img{
     border-radius: 5px;
 }
+#toggle-sideBar{
+    margin-right:2.5rem;
+}
