@@ -7,12 +7,12 @@ async function toggleNavBar(){
     if(!isNavBarOpen){
         navBar.style.right='0';
         overLayEl.style.display='block'
-        toggleNavBarBtn.innerHTML=`<img src="/Assets/close-menu.png" alt="open navigation bar icon">`;
+        toggleNavBarBtn.innerHTML=`<img src="Assets/close-menu.png" alt="close navigation bar icon">`;
         isNavBarOpen=true;
     }else{
         navBar.style.right='-100%';
         overLayEl.style.display='none'
-        toggleNavBarBtn.innerHTML=`<img src="/Assets/open-menu.png" alt="open navigation bar icon">`;
+        toggleNavBarBtn.innerHTML=`<img src="Assets/open-menu.png" alt="open navigation bar icon">`;
         isNavBarOpen=false;
     }
 }
