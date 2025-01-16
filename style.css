@@ -216,3 +216,7 @@ footer{
     align-items: center;
     justify-content: center;
 }
+.about .one{
+    position: absolute;
+    top:40rem ;
+}
