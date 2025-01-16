@@ -217,3 +217,15 @@ footer{
     justify-content: center;
 }
 
+.about .two{
+    background-color: #075985;
+    height: 20rem;
+}
+.home .four{
+    height: 10rem;
+}
+.about .three{
+    background-color: #111827;
+    height: 7rem;
+}
+
