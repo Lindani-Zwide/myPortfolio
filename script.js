@@ -1,3 +1,4 @@
+//Responsiveness for a navigation bar
 const toggleNavBarBtn=document.getElementById('toggle-sideBar');
 let isNavBarOpen=false;
 const navBar=document.getElementById('navBarEl');
@@ -25,3 +26,18 @@ nav_li_list.forEach((a)=>{
 })
 
 overLayEl.addEventListener('click',toggleNavBar)
+
+//styles and contents for the footer
+const footerEl=document.getElementById('footer')
+const date=new Date()
+const year=date.getFullYear()
+footerEl.innerHTML=`
+                <p id="copyRight">
+                   Copyright © ${year} Lindani Mthembu
+                </p>
+`
+const cpRight= document.getElementById('copyRight')
+const cpRightStyle=cpRight.style
+cpRightStyle.color='#e5e5ed'
+cpRightStyle.opacity='0.7'
+cpRightStyle.fontSize='0.7rem'
