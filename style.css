@@ -195,6 +195,8 @@ section > .one{
 .text-paragraph{
     padding: 0.2rem;
     text-align: start;
+    font-style: italic;
+    padding-left: 0.6rem;
 }
 /*Styles for the dark overlay when the navigation bar is open*/
 #overlay{
