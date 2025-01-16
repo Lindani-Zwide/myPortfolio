@@ -146,13 +146,13 @@ section > .one{
         content: "A Developer";
     }
     21%,40%{
-        content: "A Logician";
-    }
-    41%,60%{
         content: "A Tutor(stem)";
     }
+    41%,60%{
+        content:  "A Programmer";
+    }
     61%,80%{
-        content: "A Designer";
+        content: "A Logician";
     }
     81%,100%{
         content: "A Chess-player";
