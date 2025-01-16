@@ -101,11 +101,10 @@ section > .one{
     margin: 0.5rem;
     height: 12rem;
     width: 12rem;
-    background-color: #111827;
     border-radius: 1rem;
 }
 .home img{
-    border-radius: 1rem;
+    border-radius: 5px;
 }
 .connect ul{
     display: flex;
