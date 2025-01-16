@@ -113,6 +113,7 @@ section > .one{
     justify-content: center;
     background-color: #D1D5DB;
     border-bottom: 1px solid #075985;
+    color: #075985;
 }
 /*Styles for the '.two' container in the home secion*/
 .home .two{
