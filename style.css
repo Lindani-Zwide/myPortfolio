@@ -217,16 +217,36 @@ footer{
     align-items: center;
     justify-content: center;
 }
-
-.about .two{
-    background-color: #075985;
-    height: 20rem;
+/*Styles for the about section*/
+.about{
+    justify-content: space-around;
 }
-.home .four{
-    height: 10rem;
+.about .three img{
+    border-radius: 1rem;
+}
+.about .one{
+    margin-top: 2rem;
+}
+button{
+    border: none;
+    cursor: pointer;
+}
+.about .three a{
+    text-align: center;
+    color: #e5e5ed;
+    background-color: #075985;
+    height: 1.6rem;
+    width: 10rem;
+    border-radius: 1rem;
+    font-weight: 600;
+    padding: 0.3rem;
 }
 .about .three{
-    background-color: #111827;
-    height: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1rem;
 }
-
+.about .two{
+    height:5rem;
+}
