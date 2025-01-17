@@ -218,35 +218,34 @@ footer{
     justify-content: center;
 }
 /*Styles for the about section*/
-.about{
-    justify-content: space-around;
+.about,
+.projects,
+.contact,
+.services{
+    display: grid;
+    grid-template-rows: repeat(2,3.3rem);
+    grid-template-Columns: repeat(auto-fit,12rem);
+    row-gap: 0.9rem;
+    column-gap: 0.8rem;
 }
-.about .three img{
-    border-radius: 1rem;
+.about > div,
+.services > div,
+.contact > div,
+.projects > div{
+    background-color:#111827;
+    height: 100%;
+    width: 100%;
 }
-.about .one{
-    margin-top: 2rem;
-}
-button{
-    border: none;
-    cursor: pointer;
-}
-.about .three a{
-    text-align: center;
-    color: #e5e5ed;
-    background-color: #075985;
-    height: 1.6rem;
-    width: 10rem;
-    border-radius: 1rem;
-    font-weight: 600;
-    padding: 0.3rem;
-}
-.about .three{
+.about .one,
+.projects .one,
+.services .one,
+.contact .one{
+    grid-area: 1/1/2/3;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:1rem;
+    color: #e5e5ed;
 }
-.about .two{
-    height:5rem;
+.about{
+    
 }
