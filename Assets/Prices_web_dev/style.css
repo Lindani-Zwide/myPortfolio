@@ -50,7 +50,7 @@ th, td {
 }
 footer {
     background-color:#111827;
-    color: #fff;
+    color: rgba(255, 255, 255,0.5);
     padding: 1em;
     text-align: center;
     clear: both;
