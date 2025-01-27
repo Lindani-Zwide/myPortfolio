@@ -41,7 +41,7 @@ button:hover {
 
 footer {
     background-color:#111827;
-    color: #D1D5DB;
+    color: rgba(255, 255, 255,0.5);
     padding: 1em;
     text-align: center;
     clear: both;
