@@ -41,3 +41,26 @@ const cpRightStyle=cpRight.style
 cpRightStyle.color='#e5e5ed'
 cpRightStyle.opacity='0.7'
 cpRightStyle.fontSize='0.7rem'
+
+//Responsiveness of the projects section for the horizontal scroll
+const slides = document.querySelectorAll('.slide');
+const prevButton = document.querySelector('.prev');
+const nextButton = document.querySelector('.next');
+
+let currentSlideIndex = 0;
+
+prevButton.addEventListener('click', () => {
+  currentSlideIndex = (currentSlideIndex - 1 + slides.length) % slides.length;
+  updateSlide();
+});
+
+nextButton.addEventListener('click', () => {
+  currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+  updateSlide();
+});
+
+function updateSlide() {
+  slides.forEach((slide, index) => {
+    slide.style.display = index === currentSlideIndex ? 'flex' : 'none';
+  });
+}
