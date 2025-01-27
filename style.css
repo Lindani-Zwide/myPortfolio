@@ -1,0 +1,342 @@
+/*Styles for general elements*/
+*{
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    pointer-events: all;
+    scroll-behavior: smooth;
+}
+/*Styles for body elements*/
+body{
+    background-color: #D1D5DB;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+/*Styles for header elements*/
+header{
+    background-color:#111827 ;
+    padding: .5rem 1rem;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    z-index: 10;
+}
+/*Styles for logo Element*/
+.logo h4{
+    font-family: handWritten;
+}
+.logo{
+    font-size: 1.5rem;
+    padding: 0.4rem 0.2rem;
+    color:#e5e5ed ;
+    margin-right: auto;
+}
+/*Styles for button element in the header*/
+header button{
+    background-color: #e5e5ed;
+    border: none;
+    width: 3rem;
+    height: 2.5rem;
+    border-radius: 1rem;
+}
+/*Styles for buttons with class 'btn'*/
+.btn{
+    cursor: pointer;
+}
+/*Styles for navigation bar element*/
+nav{
+    position: fixed;
+    top: 3.5rem;
+    right: -100%;
+    transition: right 350ms ease-out;
+    width: 15rem;
+    border-bottom: 0.3rem solid #111827;
+    border-left: 0.2rem solid #111827;
+    border-bottom-left-radius: 1rem;
+    z-index: 10;
+    background-color: rgba(0,0,0,0.5);
+}
+/*Styles for list container in the navigation bar*/
+nav ul{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: .7rem;
+    align-items: center;
+}
+/*Styles for '<a>'s inside list items in the navigation bar*/
+nav ul li a{
+    font-size: 1.3rem;
+    color: #e5e5ed;
+    background-color:#111827;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    
+}
+/*Styles for list items in the navigation bar*/
+nav ul li{
+    width: 100%;
+    text-align: center;
+}
+/*Styles for sections elements*/
+section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0.2rem;
+    height: 100vh;
+}
+/*Styles for all '.one' containers on every section element*/
+@font-face {
+    font-family: handWrittenFont;
+    src: url(/Assets/Fonts/handWritten.otf);
+}
+section > .one{
+    font-family: handWritten;
+    font-style: italic;
+    font-size: 2rem;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #075985;
+    height: 3.35rem;
+    border-bottom: 1px solid ;
+}
+/*
+   Styles for the centering 2nd,3rd,4th..etc divs in each section
+*/
+section div:not(:first-child),h2,h3{
+    align-self: center;
+}
+/*Styles for the '.two' container in the home secion*/
+.home .two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+    height: 12rem;
+    width: 12rem;
+    border-radius: 1rem;
+}
+/*Styles for photo of Lindani in the home section*/
+.home img{
+    border-radius: 5px;
+}
+/*Styles for 'connect with me on:' element*/
+.connect ul{
+    display: flex;
+    gap: 0.5rem;
+}
+/*Styles for the animated text in the home section*/
+.animated-text{
+    font-size: 2.5rem;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.animated-text{
+    position: relative;
+}
+.animated-text::before{
+    content: "";
+    color:  #075985;
+    animation: words 20s infinite;
+}
+.animated-text::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 2px #075985;
+    background-color: #D1D5DB;
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid #ff7f5000;
+    }
+}
+
+@keyframes words {
+    0%,20%{
+        content: "A Developer";
+    }
+    21%,40%{
+        content: "A Tutor(stem)";
+    }
+    41%,60%{
+        content: "A Programmer";
+    }
+    61%,80%{
+        content: "A Designer";
+    }
+    81%,100%{
+        content: "A Chess-player";
+    }
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}
+/*Styles for the text paragraph in the home section*/
+.text-paragraph{
+    padding: 0.5rem;
+    text-align: start;
+    font-style: italic;
+    margin-top: 0.3rem;
+    max-width: 22.75rem;
+}
+/*Styles for the dark overlay when the navigation bar is open*/
+#overlay{
+    background-color:rgba(0,0,0,0.8);
+    position: fixed;
+    inset: 0;
+    z-index: 9;
+    display:none;
+    transition: display 400ms ease-out;
+}
+/*Styles for the footer*/
+footer{
+    background-color: #111827;
+    min-height: 3.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/*Styles for the Home section*/
+.home .four{
+    background-color: #212c44;
+    color: #e5e5ed;
+    height: 13rem;
+    border-radius: 1rem;
+}
+a{
+    text-align:center;
+}
+/*Styles for the Home section*/
+.about .two{
+    background-color: #212c44;
+    color: #e5e5ed;
+    border-radius: 1rem;
+    height: 10rem;
+    margin-top: 0.3rem;
+}
+.about .three img{
+    border-radius: 1rem;
+    height: 15rem;
+}
+#link-el{
+    border: none;
+    font-weight: 700;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    background-color: #075985;
+    color: #e5e5ed;
+    padding: 0.8rem 0.2rem;
+}
+a{
+    text-align:center;
+}
+.about .four img{
+    rotate: 270deg;
+    border-radius: 50%;
+}
+/*
+  Styles for the services section
+*/
+.services :where(.three,.two){
+    height: 42vh;
+    background-color: #212c44;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.5rem;
+    border: 1px solid #e5e5ed;
+    color: #D1D5DB;
+}
+.services :where(.two img, .three img){
+    border-radius: 1rem;
+    padding-top: 0.4rem;
+}
+.connect #w-me-icon img{
+    border-radius: 50%;
+}
+/*
+  Styles for the horizontal scroll of the projects  section
+*/
+
+.slider {
+    position: relative;
+    width: 23rem;
+    height:89vh ;
+    align-self: center;
+    display: flex;
+    background-color: #075985;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+
+.slides {
+  display: flex;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  user-select: none; 
+}
+.slide {
+  background-color: #D1D5DB;
+  flex-shrink: 0;
+  width: 22.3rem;
+  height: 86vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  font-weight: 700;
+  
+}
+
+.prev, .next {
+  position: absolute;
+  top: 75%;
+  transform: translateY(-50%);
+  font-size: 36px;
+  cursor: pointer;
+  border: none;
+  border-radius: 2rem;
+
+}
+.prev {
+  display: flex;
+  left: 10px;
+  
+}
+.prev img{
+  rotate: 180deg;
+}
+.next {
+  display: flex;
+  right: 10px;
+}
+.projects{
+    height: 3.6rem;
+}
