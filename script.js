@@ -33,7 +33,7 @@ const date=new Date()
 const year=date.getFullYear()
 footerEl.innerHTML=`
                 <p id="copyRight">
-                   Copyright © ${year} Lindani Mthembu
+                   © ${year} Lindani Mthembu
                 </p>
 `
 const cpRight= document.getElementById('copyRight')

@@ -289,7 +289,6 @@ a{
     height:89vh ;
     align-self: center;
     display: flex;
-    background-color: #075985;
     justify-content: center;
     align-items: center;
     border-radius: 0.5rem;
@@ -308,27 +307,23 @@ a{
   width: 22.3rem;
   height: 86vh;
   display: flex;
-  justify-content: center;
   align-items: center;
-  font-size: 36px;
-  font-weight: 700;
-  
+  flex-direction: column;
 }
 
 .prev, .next {
   position: absolute;
-  top: 75%;
+  top: 50%;
   transform: translateY(-50%);
   font-size: 36px;
   cursor: pointer;
   border: none;
   border-radius: 2rem;
-
+  
 }
 .prev {
   display: flex;
   left: 10px;
-  
 }
 .prev img{
   rotate: 180deg;
@@ -339,4 +334,8 @@ a{
 }
 .projects{
     height: 3.6rem;
+}
+#link-el:hover{
+    transition: background-color 350ms ease-in-out;
+    background-color: #175ef5;
 }

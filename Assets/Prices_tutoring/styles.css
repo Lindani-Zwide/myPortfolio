@@ -57,3 +57,6 @@ footer {
     text-decoration: none;
     color: #4290bb;
 }
+#contact p a:hover{
+    color: aqua;
+}
