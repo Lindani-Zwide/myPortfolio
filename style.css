@@ -418,3 +418,6 @@ form button:hover{
 .services{
     gap:0.8rem;
 }
+.description{
+    margin-top:1rem ;
+}
