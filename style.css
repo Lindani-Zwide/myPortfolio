@@ -372,19 +372,37 @@ a{
     color: rgb(94, 16, 114);
 }
 form{
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
-    width: 23.5rem;
-    align-items: center;    
+    align-items: center; 
+    gap: 0.5rem; 
+
 }
 .contact {
     height: 95vh;
-    align-self: center;
 }
 input,
 textarea{
     width: 98%;
+    border: 2px solid #175ef5;
+    border-radius: 0.5rem;
 }
 #name{
     align-items: center;
+}
+input{
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+textarea{
+    padding: 0.5rem;
+}
+form button{
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    font-weight: 600;
+    background-color: #175ef5;
+    color: #D1D5DB;
 }
