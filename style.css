@@ -339,3 +339,52 @@ a{
     transition: background-color 350ms ease-in-out;
     background-color: #175ef5;
 }
+.image{
+    border-radius: 0.5rem;
+    margin-top: 3.5rem;
+}
+.slide h4{
+    color: #075985;
+    font-size: 1.3rem;
+    padding-bottom: 1.4rem;
+    width: 6rem;
+    text-align: center;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-bottom: 5px solid #175ef5;
+    border-left: 1px solid #175ef5;
+    border-right: 1px solid #175ef5;
+    box-shadow: 0 3px 2px #175ef5;
+}
+.description{
+    text-align: center;
+    border: 1px solid #075985;
+    border-radius: 0.5rem;
+    padding: 0.25rem;
+    font-style: italic;
+    height: 12rem;
+}
+.description a{
+    color:#293eb3;
+    font-size:1.1rem;
+}
+.description a:hover{
+    color: rgb(94, 16, 114);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 23.5rem;
+    align-items: center;    
+}
+.contact {
+    height: 85vh;
+    align-self: center;
+}
+input,
+textarea{
+    width: 98%;
+}
+#name{
+    align-items: center;
+}

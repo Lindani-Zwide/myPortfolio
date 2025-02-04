@@ -101,24 +101,52 @@
         <section class="slider">
             <button class="prev" aria-label="Previous slide"> <img src="Assets/next.png" alt="left arrow icon" width="50" height="50"> </button>
                <div class="slides">
-                    <div class="slide">
-                        <img class="project-image" src="" alt="tic-tac-toe game picture"/>
-                        <p class="project-description">
-                            This is a description for this project (Project one)
+                    <div class="slide" class="tic_tac_toe">
+                        <h4>ONE</h4>
+                        <img class="image" src="Assets/Projects screenshorts/tic-tac-toe.jpg" alt="tic-tac-toe game picture" width="200" height="250"/>
+                        <p class="description">
+                            A fully functional, interactive Tic-Tac-Toe game built using HTML, CSS, and JavaScript. This project showcases my proficiency in front-end development, 
+                            game logic implementation, and user interface design. The game features a responsive design, smooth animations, and a robust winning condition detection algorithm.<br>
+                            View Live Demo: [ <a href="https://lindani-zwide.github.io/tic-tac-toe-GAME/" target="_parent">tic-tac-toe</a> ] <br>
                         </p>
-                        <a class="view-project" href="Assets/Prices_tutoring/index.html"  target="_parent">NEED A TUTOR?</a>
                     </div>
-                    <div class="slide">project 2</div>
-                    <div class="slide">project 3</div>
+                    <div class="slide" class="unit-converter">
+                        <h4>TWO</h4>
+                        <img class="image" src="Assets/Projects screenshorts/unit-converter.jpg" alt="tic-tac-toe game picture" width="200" height="250"/>
+                        <p class="description">
+                            A simple and efficient Metric Unit Converter built with HTML, CSS, and JavaScript. This tool handles four essential conversions: mass, temperature, volume, and length. It features a clean interface, accurate calculations, and responsive design.<br>
+                            View Live Demo: [ <a href=" https://lindani-zwide.github.io/Metric_Unit_Converter/" target="_parent">metric unit converter</a> ] <br>                           
+                        </p>
+                    </div>
+                    <div class="slide" class="password-generator">
+                        <h4>THREE</h4>
+                        <img class="image" src="Assets/Projects screenshorts/password-generator.jpg" alt="tic-tac-toe game picture" width="200" height="250"/>
+                        <p class="description">
+                            A secure Random Password Generator built with HTML, CSS and JavaScript. It creates strong passwords of adjustable lengths between 8 and 15 characters, leveraging CSPRNG for enhanced security. The tool ensures high randomness and user flexibility.<br>
+                            View Live Demo: [ <a href=" https://lindani-zwide.github.io/PasswordGenerator/" target="_parent">Password generator</a> ] <br>                           
+                        </p>
+                    </div>
+                    <div class="slide" class="portfolio">
+                        <h4>FOUR</h4>
+                        <img class="image" src="Assets/Projects screenshorts/profile.jpg" alt="tic-tac-toe game picture" width="200" height="250"/>
+                        <p class="description">
+                            A modern, responsive Portfolio Website showcasing my projects, skills, and achievements. Built with CSS,HTML and JavaScript, it features a clean design, smooth navigation, and an interactive user experience to highlight my professional journey.<br>
+                            View Live Demo: [ <a href=" https://lindani-zwide.github.io/myPortfolio/">my portfolio</a> ] <br>   
+                        </p>
+                    </div>
                </div>
             <button class="next" aria-label="Next slide"><img src="Assets/next.png" alt="left arrow icon"  width="50" height="50"></button>
         </section>
         <!--Contact structure-->
         <section class="contact" id="contact">
             <div class="one">CONTACT ME</div>
-            <div class="two">two</div>
-            <div class="three">three</div>
-            <div class="four">Four</div>
+            <form action="#" method="post" class="contact-form">
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <input type="text" id="surname" name="surname" placeholder="Enter your surname" required>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">  
+                <textarea id="message" name="message" placeholder="Write your message here..." rows="8" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
         </section>
         <!--Footer structure-->
         <footer id="footer">  </footer>
