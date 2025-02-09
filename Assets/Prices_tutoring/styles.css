@@ -60,3 +60,7 @@ footer {
 #contact p a:hover{
     color: aqua;
 }
+
+#contact {
+    overflow: hidden;
+}
