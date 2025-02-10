@@ -5,15 +5,18 @@ const navBar=document.getElementById('navBarEl');
 const overLayEl=document.getElementById('overlay')
 
 async function toggleNavBar(){
+ 
     if(!isNavBarOpen){
+        toggleNavBarBtn.style.fontSize="2.5rem"
         navBar.style.right='0';
         overLayEl.style.display='block'
-        toggleNavBarBtn.innerHTML=`<img src="Assets/close (1).png" height="33" width="33"  alt="close navigation bar icon">`;
+        toggleNavBarBtn.innerHTML=`<i class="fa-solid fa-close" id="menu-icon"></i>`;
         isNavBarOpen=true;
     }else{
+        toggleNavBarBtn.style.fontSize="2.3rem"
         navBar.style.right='-100%';
         overLayEl.style.display='none'
-        toggleNavBarBtn.innerHTML=`<img src="Assets/open-menu-bar.png"  height="41" width="41" alt="open navigation bar icon">`;
+        toggleNavBarBtn.innerHTML=`<i class="fa-solid fa-bars" id="menu-icon"></i>`;
         isNavBarOpen=false;
     }
 }
