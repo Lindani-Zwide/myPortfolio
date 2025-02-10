@@ -92,7 +92,7 @@ section {
     flex-wrap: wrap;
     flex-direction: column;
     padding: 0.2rem;
-    height: 100vh;
+    height: min(100vh,40.375rem);
 }
 /*Styles for all '.one' containers on every section element*/
 @font-face {

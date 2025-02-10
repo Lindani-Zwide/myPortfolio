@@ -10,7 +10,6 @@ main {
     align-items: center;
     padding: 2em;
 }
-
 section {
     background-color: #212c44;
     padding: 1em;
@@ -20,7 +19,7 @@ section {
     width: 100%;
 }
 
-h1, h2 {
+h1,h2 {
     color: #e5e5ed;
 }
 
@@ -60,7 +59,6 @@ footer {
 #contact p a:hover{
     color: aqua;
 }
-
-#contact {
+#contact{
     overflow: hidden;
 }
