@@ -98,7 +98,7 @@ section {
 /*Styles for all '.one' containers on every section element*/
 @font-face {
     font-family: handWrittenFont;
-    src: url(/Assets/Fonts/handWritten.otf);
+    src: url(Assets/Fonts/handWritten.otf);
 }
 section > .one{
     font-family: handWritten;
