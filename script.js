@@ -1,57 +1,56 @@
-//Responsiveness for a navigation bar
-const toggleNavBarBtn=document.getElementById('toggle-sideBar');
-let isNavBarOpen=false;
-const navBar=document.getElementById('navBarEl');
-const overLayEl=document.getElementById('overlay')
 
-async function toggleNavBar(){
- 
-    if(!isNavBarOpen){
-        toggleNavBarBtn.style.fontSize="2.5rem"
-        navBar.style.right='0';
-        overLayEl.style.display='block'
-        toggleNavBarBtn.innerHTML=`<i class="fa-solid fa-close" id="menu-icon"></i>`;
-        isNavBarOpen=true;
-    }else{
-        toggleNavBarBtn.style.fontSize="2.3rem"
-        navBar.style.right='-100%';
-        overLayEl.style.display='none'
-        toggleNavBarBtn.innerHTML=`<i class="fa-solid fa-bars" id="menu-icon"></i>`;
-        isNavBarOpen=false;
-    }
+// Responsiveness for a navigation bar
+const toggleNavBarBtn = document.getElementById('toggle-sideBar');
+let isNavBarOpen = false;
+const navBar = document.getElementById('navBarEl');
+const overLayEl = document.getElementById('overlay');
+
+async function toggleNavBar() {
+  if (!isNavBarOpen) {
+    toggleNavBarBtn.style.fontSize = "2.5rem";
+    navBar.style.right = '0';
+    overLayEl.style.display = 'block';
+    toggleNavBarBtn.innerHTML = `<i class="fa-solid fa-close" id="menu-icon"></i>`;
+    isNavBarOpen = true;
+  } else {
+    toggleNavBarBtn.style.fontSize = "2.3rem";
+    navBar.style.right = '-100%';
+    overLayEl.style.display = 'none';
+    toggleNavBarBtn.innerHTML = `<i class="fa-solid fa-bars" id="menu-icon"></i>`;
+    isNavBarOpen = false;
+  }
 }
 
-toggleNavBarBtn.addEventListener('click',toggleNavBar);
+toggleNavBarBtn.addEventListener('click', toggleNavBar);
 
-const nav_li_list=document.querySelectorAll('.li-item')
-nav_li_list.forEach((a)=>{
-    a.addEventListener('click',toggleNavBar)
-})
+const nav_li_list = document.querySelectorAll('.li-item');
+nav_li_list.forEach((a) => {
+  a.addEventListener('click', toggleNavBar);
+});
 
-overLayEl.addEventListener('click',toggleNavBar)
+overLayEl.addEventListener('click', toggleNavBar);
 
-//styles and contents for the footer
-const footerEl=document.getElementById('footer')
-const date=new Date()
-const year=date.getFullYear()
-footerEl.innerHTML=`
-                <p id="copyRight">
-                   © ${year} Lindani Mthembu
-                </p>
-`
-const cpRight= document.getElementById('copyRight')
-const cpRightStyle=cpRight.style
-cpRightStyle.color='#e5e5ed'
-cpRightStyle.opacity='0.7'
-cpRightStyle.fontSize='0.7rem'
+// styles and contents for the footer
+const footerEl = document.getElementById('footer');
+const date = new Date();
+const year = date.getFullYear();
+footerEl.innerHTML = `
+  <p id="copyRight"> &copy; ${year} Lindani Mthembu </p>
+`;
+const cpRight = document.getElementById('copyRight');
+const cpRightStyle = cpRight.style;
+cpRightStyle.color = '#e5e5ed';
+cpRightStyle.opacity = '0.7';
+cpRightStyle.fontSize = '0.7rem';
 
-//Responsiveness of the projects section for the horizontal scroll
+// Responsiveness of the projects section for the horizontal scroll
 const slides = document.querySelectorAll('.slide');
 const prevButton = document.querySelector('.prev');
 const nextButton = document.querySelector('.next');
-
 let currentSlideIndex = 0;
+
 updateSlide();
+
 prevButton.addEventListener('click', () => {
   currentSlideIndex = (currentSlideIndex - 1 + slides.length) % slides.length;
   updateSlide();
@@ -67,3 +66,30 @@ function updateSlide() {
     slide.style.display = index === currentSlideIndex ? 'flex' : 'none';
   });
 }
+
+// Contact form submission handler
+const contactForm = document.querySelector('.contact-form');
+const nameInput = document.getElementById('name');
+const emailInput = document.getElementById('email');
+const phoneInput = document.getElementById('phone');
+const messageInput = document.getElementById('message');
+
+contactForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  const successMessage = document.createElement('p');
+  successMessage.textContent = 'Message sent!';
+  successMessage.style.color = 'green';
+  successMessage.style.backgroundColor = 'white';
+  successMessage.style.padding = '10px';
+  successMessage.style.borderRadius = '5px';
+  contactForm.appendChild(successMessage);
+
+  setTimeout(() => {
+    nameInput.value = '';
+    emailInput.value = '';
+    phoneInput.value = '';
+    messageInput.value = '';
+    successMessage.remove();
+  }, 1000);
+});
