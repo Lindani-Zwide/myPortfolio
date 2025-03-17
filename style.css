@@ -48,7 +48,7 @@ header button{
 }
 /*Styles for buttons with class 'btn'*/
 .btn{
-    cursor: pointer;
+    cursor: none;
 }
 /*Styles for navigation bar element*/
 nav{
@@ -421,4 +421,7 @@ form button:hover{
 }
 .description{
     margin-top:1rem ;
+}
+button{
+    cursor: none;
 }
