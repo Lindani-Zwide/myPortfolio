@@ -48,7 +48,7 @@ header button{
 }
 /*Styles for buttons with class 'btn'*/
 .btn{
-    cursor: none;
+    cursor: pointer;
 }
 /*Styles for navigation bar element*/
 nav{
